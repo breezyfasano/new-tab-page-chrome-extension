@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.typekit.net/igi6ixw.css">
+    <style>/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */button,hr,input{overflow:visible}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}body,h1{color:#211A1D}body,h3{margin:0}a:hover,cite,h3{color:#8075FF}#blob,.pusheen img{bottom:0;position:fixed}#blob,#dots,.pusheen img{position:fixed}*,::after,::before{box-sizing:border-box}html{line-height:1.15;-webkit-text-size-adjust:100%}details,main{display:block}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;color:#29E597;text-decoration:none}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}body{font-family:sofia-pro-soft,sans-serif;font-size:22px}h1{font-size:4rem;text-align:center;margin:70px 0 0;font-weight:500;text-shadow:2px 2px 6px rgba(0,0,0,.15)}h3{font-weight:400}a:hover{transition:.8s}input[type=text]{padding:15px;border-radius:30px;border:2px solid #8075FF;width:75%}.button{padding:15px 35px;border-radius:30px;background:#8075FF;color:#f4f4f4;font-weight:700;transition:.2s;border:0}.button:hover{background:#29E597;cursor:pointer;color:#f4f4f4}.form-container{display:block;margin:50px auto 0;width:90%;flex-direction:column;align-content:center}.pusheen img{max-width:33vw;top:250px;left:70px}#blob{max-width:45vw;top:-20px;left:0;z-index:-1;opacity:.8}#dots{max-width:16vw;top:70px;left:1100px;z-index:-2;transform:rotate(45deg);opacity:.7}html{background:#f4f4f4}.container-root{max-width:75vw;margin:0 auto;background:0 0;z-index:1}.row{display:flex;justify-content:space-between}.card{background:#fff;padding:25px;margin-top:50px;min-width:25%;border-radius:9px;box-shadow:3px 3px 10px #E3E3E3}.full-width{width:100%}</style>
+    <title>New Tab</title>
+  </head>
+  <body>
+    <div class="container-root">
+      <h1 id="greeting"></h1>
+      <div class="row">
+        <div class="card">
+          <h3>reddit</h3>
+          <div class="list-container">
+            <ul>
+              <li><a href="https://www.reddit.com/r/analog">/r/analog</a></li>
+              <li><a href="https://www.reddit.com/r/webdev">/r/webdev</a></li>
+              <li><a href="https://www.reddit.com/r/web_design">/r/web_design</a></li>
+              <li><a href="https://www.reddit.com/r/overwatch">/r/overwatch</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card shape">
+          <h3>entertainment</h3>
+          <div class="list-container">
+            <ul>
+              <li><a href="https://www.netflix.com">netflix</a></li>
+              <li><a href="https://www.hulu.com">hulu</a></li>
+              <li><a href="https://www.twitch.tv">twitch</a></li>
+              <li><a href="https://www.youtube.com">youtube</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>coding</h3>
+          <div class="list-container">
+            <ul>
+              <li><a href="https://devhints.io/">devhints</a></li>
+              <li><a href="https://www.github.com">github</a></li>
+              <li><a href="https://www.udemy.com">udemy</a></li>
+              <li><a href="https://www.freecodecamp.org">freecodecamp</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row form-container">
+          <form action="https://www.google.com/search" target="_blank">
+          <input name="q" id="google-search" type="text" placeholder="Search Google..">
+          <button class="button" type="submit">Submit</button>
+          </form>
+      </div>
+
+      <div class="row">
+        <div class="container full-width">
+          <div class="card">
+            <blockquote id="qod">
+              <p>
+              </p>
+            </blockquote>
+
+            <cite></cite>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img id="blob" src="images/blob.svg">
+    <img id="dots" src="images/dots.svg">
+  <script src="js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "manifest_version": 2,
+    "name": "Breezy's New Tab Page",
+    "version": "1.0",
+    "description": "Replaces Google's new tab page with my own custom page",
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
+}
