@@ -28,3 +28,18 @@ fetch("https://quotes.rest/qod.json?category=inspire") // fetching the quote of 
     const quoteBox = document.querySelector("#qod p");
     quoteBox.textContent = "Error:" + err;
 });
+
+const textarea = document.querySelector("textarea");
+
+window.addEventListener("load", () => {
+    chrome.storage.local.get("note", (item) => {
+        textarea.value = item.note;
+    })
+});
+
+textarea.addEventListener("focusout", function() {
+    const textareaValue = textarea.value;
+    chrome.storage.local.set({ "note": textareaValue }, function () {
+        console.log('note saved!')
+    })
+});
