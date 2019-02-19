@@ -1,6 +1,8 @@
 # new-tab-page-chrome-extension
 My personal tab page, optimized as an extension for Google Chrome
 
+<img src="images/start-page.gif" />>
+
 ### Features
 - A list of common links I visit, including Reddit, Netflix, Github, etc
 - A Google search
